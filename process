@@ -1,0 +1,4 @@
+#!/bin/bash
+ruby render.rb $@ > sheets/$@.mscx
+musescore "sheets/$@.mscx" -o "pics/$@.png"
+musescore "sheets/$@.mscx" -o "pdfs/$@.pdf"
